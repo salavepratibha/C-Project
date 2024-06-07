@@ -59,7 +59,7 @@ class Registration
     void Flights()
     {
         string FlightN[] = {"America(USA)", "London(UK)", "Singapur",
-                            "Dubai", "Netherland", "Japan", "Jarmany",
+                            "Dubai", "Netherland", "Japan", "Germany",
                             "Australia","Thailand","South Korea"
                            };
 
@@ -406,17 +406,17 @@ class Registration
 
             case 7:
             {
-                 cout<<"______Welcome to Jarmany Emirates____\n"<<endl;
+                 cout<<"______Welcome to Germany Emirates____\n"<<endl;
 
                 cout<<"Your comfort is our priority. Enjoy the journey!!"<<endl;
 
                 cout<<"Following are the FLights \n"<<endl;
 
-                cout<<"1.JARMNAY - 742"<<endl;
+                cout<<"1.GERMANY - 742"<<endl;
                 cout<<"\t22-11-2022 5:00 10hrs Rs. 14000"<<endl;
-                cout<<"2.JARMNAY  - 644"<<endl;
+                cout<<"2.GERMANY  - 644"<<endl;
                 cout<<"\t23-11-2022 4:00 10hrs Rs. 10000"<<endl;
-                cout<<"3.JARMNAY  - 494"<<endl;
+                cout<<"3.GERMANY  - 494"<<endl;
                 cout<<"\t24-11-2022 11:00 10hrs Rs. 9000"<<endl;
 
                 cout<<"\nSelect the flight you want to book: ";
@@ -425,19 +425,19 @@ class Registration
                 if(choice1 == 1)
                 {
                     charges = 25000;
-                    cout<<"\n You have Successfully booked the flight JARMNAY  - 742"<<endl;
+                    cout<<"\n You have Successfully booked the flight GERMANY  - 742"<<endl;
                     cout<<"You can go back to menu and take the ticket"<<endl;
                 }
                 else if(choice1 == 2)
                 {
                     charges = 20000;
-                    cout<<"\n You have Successfully booked the flight JARMNAY  - 644"<<endl;
+                    cout<<"\n You have Successfully booked the flight GERMANY  - 644"<<endl;
                     cout<<"You can go back to menu and take the ticket"<<endl;
                 }
                 else if(choice1 == 3)
                 {
                     charges = 14000;
-                    cout<<"\n You have Successfully booked the flight JARMNAY  - 494"<<endl;
+                    cout<<"\n You have Successfully booked the flight GERMANY  - 494"<<endl;
                     cout<<"You can go back to menu and take the ticket"<<endl;
                 }
                 else
@@ -657,11 +657,11 @@ class Ticket: public Registration, public Details
 
             if(Registration::choice==1)
             {
-                destination="London";
+                destination="America(USA)";
             }
             else if(Registration::choice==2)
             {
-                destination="America(USA)";
+                destination="London";
             }
              else if(Registration::choice==3)
             {
@@ -681,11 +681,11 @@ class Ticket: public Registration, public Details
             }
             else if(Registration::choice==7)
             {
-                destination="Australia";
+                destination="Germany";
             }
              else if(Registration::choice==8)
             {
-                destination="jarmany";
+                destination="Australia";
             }
              else if(Registration::choice==9)
             {
